@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/2a2f4c86-d3fb-4454-a9ab-bc927b74c901/mera_thopda.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20251020%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20251020T095208Z&X-Amz-Expires=86400&X-Amz-Signature=a6cf408f337e993b99b6363f6c3d8ed6291cb40c3a4105d7f80fb46927d05919&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22mera_thopda.jpg%22&response-content-type=image%2Fjpeg&x-id=GetObject
