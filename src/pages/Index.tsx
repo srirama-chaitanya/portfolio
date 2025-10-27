@@ -212,7 +212,7 @@ const Index = () => {
 						</Button>
 						<Button asChild variant="secondary" size="lg">
 							<a
-								href="https://drive.google.com/file/d/1zubDOI35gfDgJvHZRMXekKgaN2BusfP4/view"
+								href="https://drive.google.com/file/d/1ZZLGXfwy3o7Ush66PPtJrXWDGe8Lt_G9/view"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
