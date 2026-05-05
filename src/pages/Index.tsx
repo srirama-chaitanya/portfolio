@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
-import { Mail, Linkedin, Github, FileText, BookOpen } from "lucide-react";
-import { FaXTwitter } from "react-icons/fa6";
+import { FileText, BookOpen } from "lucide-react";
 import { FaJava } from "react-icons/fa";
 import {
 	SiLeetcode,
-	// SiGeeksforgeeks,
+	SiCodechef,
+	SiCodeforces,
 	SiReact,
 	SiNodedotjs,
 	SiTypescript,
@@ -20,7 +20,7 @@ import {
 	SiCss3,
 	SiJavascript,
 
-  	SiSqlite,
+	SiSqlite,
 	SiMongodb,
 } from "react-icons/si";
 import avatar from "@/assets/avatar.jpg";
@@ -35,45 +35,34 @@ import { ProjectCard } from "@/components/ProjectCard";
 
 const SOCIALS = [
 	{
-		href: "mailto:sriramchaitanya06@gmail.com",
-		label: "Email",
-		icon: <Mail className="size-5" />,
-	},
-	{
-		href: "https://www.linkedin.com/in/srirama-chaitanya-devulapalli",
-		label: "LinkedIn",
-		icon: <Linkedin className="size-5" />,
-	},
-	{
-		href: "https://github.com/srirama-chaitanya",
-		label: "GitHub",
-		icon: <Github className="size-5" />,
-	},
-	{
-		href: "https://x.com/Sriram30990625",
-		label: "X (Twitter)",
-		icon: <FaXTwitter className="size-5" />,
-	},
-	{
 		href: "https://leetcode.com/u/SriramDevulapalli/",
 		label: "LeetCode",
 		icon: <SiLeetcode className="size-5" />,
 	},
-	
+	{
+		href: "https://www.codechef.com/users/sriram_cp",
+		label: "CodeChef",
+		icon: <SiCodechef className="size-5" />,
+	},
+	{
+		href: "https://codeforces.com/profile/sriram_18",
+		label: "CodeForces",
+		icon: <SiCodeforces className="size-5" />,
+	},
 ];
 
 const ADVANCED_PROJECTS = [
 	{
-		name: "Automation Hub",
-		desc: "An email-to-issue automation platform with React frontend and Node.js backend.",
-		url: "https://github.com/srirama-chaitanya/automation_hub",
-		tags: ["React", "Node.js", "Redis", "SQLite"],
+		name: "Chess Academy",
+		desc: "A comprehensive management platform for Chess Academies with Role-Based Access Control and Analytics.",
+		url: "https://github.com/srirama-chaitanya/ChessAcademy",
+		tags: ["React", "Node.js", "Express", "SQLite"],
 	},
 	{
-		name: "MFU-Simulator",
-		desc: "A warehouse simulator for layout optimization, pathfinding, and efficiency analytics.",
-		url: "https://github.com/srirama-chaitanya/MFU-Simulator",
-		tags: ["React", "Node.js", "PostgreSQL", "Pathfinding"],
+		name: "API Timeline Profiler",
+		desc: "A high-precision performance profiler for Node.js apps to visualize API latency without manual instrumentation.",
+		url: "https://github.com/srirama-chaitanya/latency-doctor",
+		tags: ["Node.js", "Express", "SQLite", "React"],
 	},
 	{
 		name: "Nxt-Trends",
@@ -201,9 +190,9 @@ const Index = () => {
 							<a
 								href="#about"
 								onClick={(e) => {
-								e.preventDefault();
-								const el = document.getElementById("about");
-								if (el) el.scrollIntoView({ behavior: "smooth" });
+									e.preventDefault();
+									const el = document.getElementById("about");
+									if (el) el.scrollIntoView({ behavior: "smooth" });
 								}}
 							>
 								<BookOpen className="size-5 mr-2" />
@@ -212,7 +201,7 @@ const Index = () => {
 						</Button>
 						<Button asChild variant="secondary" size="lg">
 							<a
-								href="https://drive.google.com/file/d/1ZZLGXfwy3o7Ush66PPtJrXWDGe8Lt_G9/view"
+								href="https://drive.google.com/file/d/1X00po12BZVMkaXCXrJtH5HbLrqIbS04Q/view"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -347,7 +336,7 @@ const Index = () => {
 						<ul className="space-y-3 text-sm">
 							<li className="flex items-center gap-2">
 								<span className="text-muted-foreground font-semibold w-20">Focus:</span>
-								<span>Full Stack Development, CP</span>
+								<span>Full Stack Development, CP, Gen AI</span>
 							</li>
 							<li className="flex items-center gap-2">
 								<span className="text-muted-foreground font-semibold w-20">Stack:</span>
@@ -402,11 +391,11 @@ const Index = () => {
 			</section>
 
 			<footer className="border-t py-8">
-  				<div className="container mx-auto text-sm text-muted-foreground flex justify-center items-center">
-    				<span className="text-center">
-      					© {new Date().getFullYear()} Devulapalli Srirama Chaitanya. All rights reserved.
-    				</span>
-  				</div>
+				<div className="container mx-auto text-sm text-muted-foreground flex justify-center items-center">
+					<span className="text-center">
+						© {new Date().getFullYear()} Devulapalli Srirama Chaitanya. All rights reserved.
+					</span>
+				</div>
 			</footer>
 		</main>
 	);

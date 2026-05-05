@@ -11,17 +11,17 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ title, description, tags = [], href }: ProjectCardProps) => {
   const card = (
-    <Card className="relative overflow-hidden h-full border-0 bg-card/70 backdrop-blur supports-[backdrop-filter]:bg-card/60 shadow-elevated hover:shadow-glow transition-[box-shadow,transform] will-change-transform">
+    <Card className="relative flex flex-col overflow-hidden h-full border-0 bg-card/70 backdrop-blur supports-[backdrop-filter]:bg-card/60 shadow-elevated hover:shadow-glow transition-[box-shadow,transform] will-change-transform">
       <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity">
         <div className="absolute inset-0 bg-gradient-accent opacity-10 mix-blend-overlay" />
       </div>
-      <CardContent className="space-y-3 py-5">
+      <CardContent className="flex flex-col flex-grow space-y-3 py-5">
         <h3 className="text-lg font-semibold leading-tight font-display">{title}</h3>
         {description ? (
-          <p className="text-sm text-muted-foreground">{description}</p>
+          <p className="text-sm text-muted-foreground flex-grow">{description}</p>
         ) : null}
         {tags && tags.length > 0 ? (
-          <div className="flex flex-wrap gap-2 pt-2">
+          <div className="flex flex-wrap gap-2 pt-2 mt-auto">
             {tags.map((t) => (
               <Badge key={t} variant="secondary">{t}</Badge>
             ))}
@@ -48,7 +48,7 @@ export const ProjectCard = ({ title, description, tags = [], href }: ProjectCard
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${title} – open link`}
-          className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"
+          className="block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"
         >
           {card}
         </a>
